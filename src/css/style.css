@@ -85,7 +85,7 @@ img {
   .navbar__logo img {
     width: 80%;
   }
-  .btn {
+  .navbar__btn {
     padding: 10px 15px;
     margin-left: 14px;
   }

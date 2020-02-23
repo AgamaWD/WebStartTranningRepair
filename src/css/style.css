@@ -19,6 +19,13 @@ img {
   color: #333333;
 }
 
+.btn:hover {
+  background-color: #ffdb33;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .navbar {
   padding: 8px 20px;
   font-size: 13px;

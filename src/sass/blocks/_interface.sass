@@ -1,10 +1,21 @@
+*
+    box-sizing: border-box
 
 body
  font-family: sans-serif
 
+section
+    padding: 0 20px
+
 .container
     max-width: 1170px
     margin: 0 auto
+
+.title, .subtitle
+    display: block
+
+.title
+    font-weight: 700
 
 img
     width: 100%
@@ -15,8 +26,22 @@ img
     border: none
     padding: 18px 30px
     color: $text-color
+    height: 70px
+    outline: none
+    font-weight: 700
+    text-align: center
 
     &:hover
         background-color: lighten($primery-color, 10%)
         transition: 0.5s
         cursor: pointer
+
+.input
+    height: 65px
+    padding-left: 26px
+    border-radius: 15px
+    border: 1.5px solid $border-color
+    outline: none
+
+    &:focus
+        border-color: $primery-color

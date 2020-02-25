@@ -220,7 +220,6 @@ img {
 .offer-block {
   width: 50%;
   padding: 88px 90px 88px 0;
-  background-color: #fff;
 }
 
 .offer__title, .offer__subtitle {
@@ -427,5 +426,52 @@ img {
   .offer__subtitle {
     font-size: 14px;
   }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  min-height: 200px;
+  margin: auto;
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  padding: 90px 0;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  width: 8%;
+  height: 12%;
+  right: 5px;
+  top: 5px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #c75050;
+}
+
+.modal-dialog__text {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 700;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

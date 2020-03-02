@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repair of apartments</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -82,6 +83,42 @@
     </div>
 </section>
 
+<section class="portfolio">
+    <div class="container">
+        <div class="portfolio-block">
+            <span class="title portfolio__title">Работая с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах</span>
+            <div class="portfolio-slider">
+                <div class="portfolio-slider__item">
+                    <img class="portfolio-slider__image" src="img/portfolio1.jpeg" alt="первый дизайн">
+                </div>
+                <div class="portfolio-slider__item">
+                    <img class="portfolio-slider__image" src="img/portfolio2.jpeg" alt="второй дизайн">
+                </div>
+                <div class="portfolio-slider__item">
+                    <img class="portfolio-slider__image" src="img/portfolio3.jpeg" alt="третий дизайн">
+                </div>
+                <div class="portfolio-slider__item">
+                    <img class="portfolio-slider__image" src="img/portfolio1.jpeg" alt="первый дизайн">
+                </div>
+                <div class="portfolio-slider__item">
+                    <img class="portfolio-slider__image" src="img/portfolio2.jpeg" alt="второй дизайн">
+                </div>
+                <div class="portfolio-slider__item">
+                    <img class="portfolio-slider__image" src="img/portfolio3.jpeg" alt="третий дизайн">
+                </div>
+            </div>
+            <div class="portfolio-arrows">
+                <div class="portfolio-arrows__left">
+                    <img src="img/left-arrow.png" alt="назад">
+                </div>
+                <div class="portfolio-arrows__right">
+                    <img src="img/right-arrow.png" alt="вперёд">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <div class="modal" id="callModal">
     <div class="modal-dialog">
@@ -92,6 +129,34 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.portfolio-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $('.portfolio-arrows__left'),
+            nextArrow: $('.portfolio-arrows__right'),
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                }
+              },
+            ]
+
+        });
+    });
+</script>
 
 </body>
 </html>

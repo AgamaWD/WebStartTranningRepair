@@ -27,6 +27,7 @@ section {
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 .btn {
@@ -272,6 +273,202 @@ img {
   margin-left: 70px;
 }
 
+.portfolio {
+  background-color: #f5f5f5;
+}
+
+.portfolio-block {
+  padding: 100px 0;
+}
+
+.portfolio__title {
+  margin-bottom: 100px;
+  font-size: 30px;
+  color: #333333;
+}
+
+.portfolio-slider__image {
+  max-width: 372px;
+  width: 90%;
+  min-height: 282px;
+  height: 90%;
+  margin: auto;
+}
+
+.portfolio-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 67px;
+}
+
+.portfolio-arrows__left, .portfolio-arrows__right {
+  width: 45px;
+  height: 19px;
+  margin: 0px 15px;
+}
+
+.portfolio-arrows__left:hover, .portfolio-arrows__right:hover {
+  cursor: pointer;
+}
+
+.price-block {
+  padding: 100px 0 70px;
+}
+
+.price__title, .price__subtitle {
+  margin: 0 auto 58px;
+}
+
+.price__title {
+  width: 530px;
+  font-size: 30px;
+}
+
+.price__subtitle {
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.price-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price__card {
+  max-width: 370px;
+  width: 30%;
+  padding-bottom: 40px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.price__card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  text-align: center;
+}
+
+.card__image {
+  height: 246px;
+  position: relative;
+  display: block;
+}
+
+.card__image:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  display: none;
+}
+
+.card__image:hover:before {
+  display: block;
+}
+
+.card__title, .card__link {
+  display: inline-block;
+  margin-top: 34px;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 18px;
+  width: 100%;
+}
+
+.card__link {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+  position: relative;
+}
+
+.card__link:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  margin-bottom: -4px;
+}
+
+.card__link:hover:after {
+  height: 70%;
+}
+
+@media (max-width: 992px) {
+  .price-cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .price__card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .price__card {
+    width: 100%;
+  }
+  .price__title {
+    width: 530px;
+    font-size: 24px;
+    margin-bottom: 27px;
+  }
+  .price__subtitle {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 550px) {
+  .price__title {
+    width: 250px;
+    font-size: 18px;
+  }
+  .price__subtitle {
+    font-size: 14px;
+  }
+  .price__card {
+    padding-bottom: 30px;
+  }
+  .card__title {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .card__link {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .card__image {
+    height: auto;
+  }
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -317,48 +514,6 @@ img {
   color: #333333;
   font-weight: 700;
   margin: auto;
-}
-
-.portfolio {
-  background-color: #f5f5f5;
-}
-
-.portfolio-block {
-  padding: 100px 0;
-}
-
-.portfolio__title {
-  margin-bottom: 100px;
-  font-size: 30px;
-  color: #333333;
-}
-
-.portfolio-slider__image {
-  max-width: 372px;
-  width: 90%;
-  min-height: 282px;
-  height: 90%;
-  margin: auto;
-}
-
-.portfolio-arrows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 67px;
-}
-
-.portfolio-arrows__left, .portfolio-arrows__right {
-  width: 45px;
-  height: 19px;
-  margin: 0px 15px;
-}
-
-.portfolio-arrows__left:hover, .portfolio-arrows__right:hover {
-  cursor: pointer;
 }
 
 @media (max-width: 600px) {

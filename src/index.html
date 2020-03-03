@@ -6,6 +6,7 @@
     <title>Repair of apartments</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -125,42 +126,42 @@
         <span class="title price__title">У нас очень гибкая система скидок на комплексные работы!</span>
         <span class="subtitle price__subtitle">Прайс на наши услуги</span>
         <div class="price-cards">
-            <div class="card price__card">
+            <div class="card price__card wow bounceInRight" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
                     <img src="img/bathroom.jpeg" alt="ванная">
                 </div>
                 <span class="card__title">Ремонт ванных комнат и с/у</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
-            <div class="card price__card">
+            <div class="card price__card wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
                     <img src="img/livingRoom.jpeg" alt="гостинная">
                 </div>
                 <span class="card__title">Ремонт комнат и квартир</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
-            <div class="card price__card">
+            <div class="card price__card wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
                     <img src="img/office.jpeg" alt="офис">
                 </div>
                 <span class="card__title">Отделка офисных помещений</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
-            <div class="card price__card">
+            <div class="card price__card wow bounceInRight" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
                     <img src="img/building.jpeg" alt="новостройка">
                 </div>
                 <span class="card__title">Ремонт в новостройках</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
-            <div class="card price__card">
+            <div class="card price__card wow bounceInDown" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
                     <img src="img/kitchen.jpeg" alt="кухня">
                 </div>
                 <span class="card__title">Ремонт кухонь</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
-            <div class="card price__card">
+            <div class="card price__card wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
                     <img src="img/attic.jpeg" alt="мансарда">
                 </div>
@@ -182,7 +183,12 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+
 <script>
+
+    new WOW().init();
+
     $(document).ready(function() {
         $('.portfolio-slider').slick({
             slidesToShow: 3,

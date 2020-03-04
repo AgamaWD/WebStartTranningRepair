@@ -49,6 +49,10 @@ img {
   cursor: pointer;
 }
 
+.form {
+  position: relative;
+}
+
 .input {
   height: 65px;
   padding-left: 26px;
@@ -61,6 +65,16 @@ img {
 
 .input:focus {
   border-color: #ffd200;
+}
+
+.invalid {
+  border: 1.5px solid #c0392b;
+}
+
+#username-error, #phone-error {
+  border: none;
+  color: #c0392b;
+  position: absolute;
 }
 
 .navbar {
@@ -245,6 +259,16 @@ img {
 
 .offer__form {
   white-space: nowrap;
+}
+
+.offer__form > #username-error {
+  left: 0;
+  top: -17px;
+}
+
+.offer__form > #phone-error {
+  left: 255px;
+  top: -17px;
 }
 
 .offer__input {
@@ -549,6 +573,22 @@ img {
   font-size: 15px;
 }
 
+.brif__form {
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.brif__form > #username-error {
+  left: 10px;
+  top: 3px;
+}
+
+.brif__form > #phone-error {
+  left: 10px;
+  top: 83px;
+}
+
 .interview__title {
   text-align: left;
   font-size: 22px;
@@ -643,6 +683,9 @@ img {
   }
   .brif-form__discription {
     font-size: 14px;
+  }
+  .brif__form > #phone-error {
+    top: 76px;
   }
   .interview {
     padding-right: 30px;
@@ -823,6 +866,12 @@ img {
   .offer-block {
     padding: 54px 30px 54px 0;
   }
+  .offer__form > #username-error {
+    left: -15px;
+  }
+  .offer__form > #phone-error {
+    left: 240px;
+  }
   .offer__input {
     max-width: 223px;
   }
@@ -835,6 +884,14 @@ img {
 }
 
 @media (max-width: 1024px) {
+  .offer__form > #username-error {
+    left: 10px;
+    top: 3px;
+  }
+  .offer__form > #phone-error {
+    left: 10px;
+    top: 75px;
+  }
   .offer__input {
     min-width: 375px;
     display: block;

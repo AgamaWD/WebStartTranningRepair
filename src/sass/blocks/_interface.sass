@@ -38,6 +38,9 @@ img
         transition: 0.5s
         cursor: pointer
 
+.form
+    position: relative
+
 .input
     height: 65px
     padding-left: 26px
@@ -49,3 +52,11 @@ img
 
     &:focus
         border-color: $primery-color
+
+.invalid
+    border: 1.5px solid $invalid-color
+
+#username-error, #phone-error
+    border: none
+    color: $invalid-color
+    position: absolute

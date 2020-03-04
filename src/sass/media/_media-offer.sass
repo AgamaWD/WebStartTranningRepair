@@ -5,8 +5,17 @@
         &-block
             padding: 54px 30px 54px 0
 
+        &__form
+
+            &>#username-error
+                left: -15px
+
+            &>#phone-error
+                left: 240px
+
         &__input
             max-width: 223px
+
         &__text
 
             &:last-of-type
@@ -18,6 +27,16 @@
 @media (max-width: 1024px)
 
     .offer
+
+        &__form
+
+            &>#username-error
+                left: 10px
+                top: 3px
+
+            &>#phone-error
+                left: 10px
+                top: 75px
 
         &__input
             min-width: 375px

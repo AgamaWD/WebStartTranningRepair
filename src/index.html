@@ -73,9 +73,9 @@
         <div class="offer-block">
             <span class="title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</span>
             <span class="subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-            <form action="#" class="offer__form form">
-                <input type="text" placeholder="Ваше имя" class="input offer__input">
-                <input type="tel" placeholder="Ваш телефон" class="input offer__input">
+            <form action="#" class="offer__form form" id="offer-form">
+                <input type="text" placeholder="Ваше имя" name="username" class="input offer__input">
+                <input type="tel" placeholder="Ваш телефон" name="phone" class="input offer__input phone">
                 <button class="btn offer__btn">Получить бесплатный дизайн-проект</button>
             </form>
             <span class="offer__text">Наш менеджер перезвонит Вам в течение 60 секунд</span>
@@ -201,9 +201,11 @@
             <div class="brif-form brif__request">
                 <span class="title brif-form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</span>
                 <span class="subtitle brif-form__subtitle">Для этого заполните форму ниже</span>
-                <input type="text" class="input brif-form__input" placeholder="Ваше имя">
-                <input type="tel" class="input brif-form__input" placeholder="Ваш телефон">
-                <button class="btn brif-form__btn">Рассчитать стоимость</button>
+                <form action="#" id="brif-form" class="brif__form form">
+                    <input type="text" class="input brif-form__input" name="username" placeholder="Ваше имя">
+                    <input type="tel" class="input brif-form__input phone" name="phone" placeholder="Ваш телефон">
+                    <button class="btn brif-form__btn">Рассчитать стоимость</button>
+                </form>
                 <span class="brif-form__discription">Мы перезвоним Вам в течение 60 секунд</span>
             </div>
         </div>
@@ -221,12 +223,81 @@
 <script src="js/modal.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 
 <script>
-
+    /*инициализация скрипта для анимаций*/
     new WOW().init();
 
+    /*проверка загрузки сайта*/
     $(document).ready(function() {
+
+        /*валидация формы*/
+        $('#offer-form').validate({
+
+            rules: {
+
+                username: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 15
+                },
+
+                phone: "required",
+            },
+
+            messages: {
+
+                username: {
+                    required: "Это поле обязательно для ввода!",
+                    minlength: "Введите не менее 2х символов!",
+                    maxlength: "Введите не более 15ти символов!"
+                },
+
+                phone: "Это поле обязательно для ввода!"
+            },
+
+            errorClass: "invalid",
+
+            errorElement: "div",
+
+        });
+
+        $('#brif-form').validate({
+
+            rules: {
+
+                username: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 15
+                },
+
+                phone: "required",
+            },
+
+            messages: {
+
+                username: {
+                    required: "Это поле обязательно для ввода!",
+                    minlength: "Введите не менее 2х символов!",
+                    maxlength: "Введите не более 15ти символов!"
+                },
+
+                phone: "Это поле обязательно для ввода!"
+            },
+
+            errorClass: "invalid",
+
+            errorElement:  "div",
+
+        });
+
+        /*маска для телефона*/
+        $('.phone').mask("+7 (999) 999-99-99");
+
+        /*слайдер в секции портфолио*/
         $('.portfolio-slider').slick({
             slidesToShow: 3,
             slidesToScroll: 1,

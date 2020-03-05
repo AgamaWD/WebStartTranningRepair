@@ -1,0 +1,92 @@
+.footer
+    position: relative
+
+    &__map
+        position: absolute
+        left: 0
+        top: 0
+        width: 50%
+        height: 100%
+
+    &-wrap
+        display: flex
+        justify-content: flex-end
+
+    &-block
+        flex-basis: 50%
+
+        &__content
+            margin: 100px auto 130px
+            max-width: 370px
+
+        &__title
+            text-align: left
+            font-size: 22px
+            line-height: 1.4
+            margin-bottom: 100px
+
+.contacts-list
+    list-style: none
+    padding-left: 0
+    margin: 0
+
+    &__item
+        display: flex
+        margin-bottom: 40px
+
+    &__icon
+        min-width: 20px
+        height: 20px
+        margin-right: 20px
+        text-align: center
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+
+    &__text
+        font-size: 16px
+        width: 145px
+
+.icon
+
+    &-map
+        background-image: url('../img/mapPlaceholderFooter.png')
+
+    &-clock
+        background-image: url('../img/clockFooter.png')
+
+    &-phone
+        background-image: url('../img/phoneCallFooter.png')
+
+@media (max-width: 850px)
+
+    .footer
+        height: 958px
+
+        &__map
+            top: 50%
+            width: 100%
+            height: 50%
+
+        &-wrap
+            flex-direction: column
+            justify-content: flex-start
+
+        &-block
+            padding: 0 20px
+
+            &__title
+                margin: 0
+                font-size: 18px
+
+            &__content
+                margin: 0 auto
+                padding: 65px 0
+
+    .contacts-list
+
+        &__item
+            margin: 40px 0 0
+
+        &__text
+            line-height: 1.4

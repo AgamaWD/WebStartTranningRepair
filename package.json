@@ -1,0 +1,23 @@
+{
+  "name": "WebStartTranningRepair",
+  "version": "1.0.0",
+  "description": "Тренировочный сайт курса. Ремонт квартир.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgamaWD/WebStartTranningRepair.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgamaWD/WebStartTranningRepair/issues"
+  },
+  "homepage": "https://github.com/AgamaWD/WebStartTranningRepair#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

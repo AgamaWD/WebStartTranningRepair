@@ -239,6 +239,7 @@ table {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-display: swap;
 }
 
 body {

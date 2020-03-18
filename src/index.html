@@ -64,7 +64,7 @@
 
 <section class="offer">
     <div class="offer-background">
-        <img src="img/offer-bg.png" alt="фото спальни" class="img offer__bg">
+        <img data-src="img/offer-bg.png" alt="фото спальни" class="img offer__bg lazyload">
     </div>
     <div class="container">
         <div class="offer-block">
@@ -87,22 +87,22 @@
             <span class="title portfolio__title">Работая с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах</span>
             <div class="portfolio-slider">
                 <div class="portfolio-slider__item">
-                    <img class="portfolio-slider__image" src="img/portfolio1.jpeg" alt="первый дизайн">
+                    <img class="portfolio-slider__image lazyload" data-src="img/portfolio1.jpeg" alt="первый дизайн">
                 </div>
                 <div class="portfolio-slider__item">
-                    <img class="portfolio-slider__image" src="img/portfolio2.jpeg" alt="второй дизайн">
+                    <img class="portfolio-slider__image lazyload" data-src="img/portfolio2.jpeg" alt="второй дизайн">
                 </div>
                 <div class="portfolio-slider__item">
-                    <img class="portfolio-slider__image" src="img/portfolio3.jpeg" alt="третий дизайн">
+                    <img class="portfolio-slider__image lazyload" data-src="img/portfolio3.jpeg" alt="третий дизайн">
                 </div>
                 <div class="portfolio-slider__item">
-                    <img class="portfolio-slider__image" src="img/portfolio1.jpeg" alt="первый дизайн">
+                    <img class="portfolio-slider__image lazyload" data-src="img/portfolio1.jpeg" alt="первый дизайн">
                 </div>
                 <div class="portfolio-slider__item">
-                    <img class="portfolio-slider__image" src="img/portfolio2.jpeg" alt="второй дизайн">
+                    <img class="portfolio-slider__image lazyload" data-src="img/portfolio2.jpeg" alt="второй дизайн">
                 </div>
                 <div class="portfolio-slider__item">
-                    <img class="portfolio-slider__image" src="img/portfolio3.jpeg" alt="третий дизайн">
+                    <img class="portfolio-slider__image lazyload" data-src="img/portfolio3.jpeg" alt="третий дизайн">
                 </div>
             </div>
             <div class="portfolio-arrows">
@@ -125,42 +125,42 @@
         <div class="price-cards">
             <div class="card price__card wow bounceInRight" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
-                    <img src="img/bathroom.jpeg" alt="ванная">
+                    <img class="lazyload" data-src="img/bathroom.jpeg" alt="ванная">
                 </div>
                 <span class="card__title">Ремонт ванных комнат и с/у</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
             <div class="card price__card wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
-                    <img src="img/livingRoom.jpeg" alt="гостинная">
+                    <img class="lazyload" data-src="img/livingRoom.jpeg" alt="гостинная">
                 </div>
                 <span class="card__title">Ремонт комнат и квартир</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
             <div class="card price__card wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
-                    <img src="img/office.jpeg" alt="офис">
+                    <img class="lazyload" data-src="img/office.jpeg" alt="офис">
                 </div>
                 <span class="card__title">Отделка офисных помещений</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
             <div class="card price__card wow bounceInRight" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
-                    <img src="img/building.jpeg" alt="новостройка">
+                    <img class="lazyload" data-src="img/building.jpeg" alt="новостройка">
                 </div>
                 <span class="card__title">Ремонт в новостройках</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
             <div class="card price__card wow bounceInDown" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
-                    <img src="img/kitchen.jpeg" alt="кухня">
+                    <img class="lazyload" data-src="img/kitchen.jpeg" alt="кухня">
                 </div>
                 <span class="card__title">Ремонт кухонь</span>
                 <a href="#" class="card__link">Узнать цены</a>
             </div>
             <div class="card price__card wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="1.5s">
                 <div class="card__image">
-                    <img src="img/attic.jpeg" alt="мансарда">
+                    <img class="lazyload" data-src="img/attic.jpeg" alt="мансарда">
                 </div>
                 <span class="card__title">Ремонт дач и коттеджей</span>
                 <a href="#" class="card__link">Узнать цены</a>
@@ -252,12 +252,13 @@
     </div>
 </div>
 
-<script defer src="js/jquery-3.4.1.min.js"></script>
-<script defer src="js/modal.js"></script>
-<script async src="js/slick.min.js"></script>
-<script defer src="js/wow.min.js"></script>
-<script defer src="js/jquery.validate.min.js"></script>
-<script defer src="js/jquery.maskedinput.min.js"></script>
+<script src="js/lazysizes.min.js" async></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 
 <script>
     /*инициализация скрипта для анимаций*/

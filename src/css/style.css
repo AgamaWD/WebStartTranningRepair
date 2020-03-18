@@ -853,13 +853,15 @@ img {
 }
 
 .offer__form > #username-error {
-  left: 0;
-  top: -17px;
+  left: 5px;
+  top: 3px;
+  font-size: 15px;
 }
 
 .offer__form > #phone-error {
-  left: 255px;
-  top: -17px;
+  left: 260px;
+  top: 3px;
+  font-size: 15px;
 }
 
 .offer__input {
@@ -1675,10 +1677,12 @@ img {
     padding: 54px 30px 54px 0;
   }
   .offer__form > #username-error {
-    left: -15px;
+    left: 3px;
+    font-size: 14px;
   }
   .offer__form > #phone-error {
-    left: 240px;
+    left: 243px;
+    font-size: 14px;
   }
   .offer__input {
     max-width: 223px;
@@ -1695,10 +1699,12 @@ img {
   .offer__form > #username-error {
     left: 10px;
     top: 3px;
+    font-size: 18px;
   }
   .offer__form > #phone-error {
     left: 10px;
     top: 75px;
+    font-size: 18px;
   }
   .offer__input {
     min-width: 375px;
@@ -1754,6 +1760,12 @@ img {
   }
   .offer__subtitle {
     font-size: 14px;
+  }
+  .offer__form > #username-error {
+    font-size: 16px;
+  }
+  .offer__form > #phone-error {
+    font-size: 16px;
   }
 }
 

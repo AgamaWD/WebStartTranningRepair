@@ -17,8 +17,8 @@ gulp.task('move-js', function(done) {
 });
 
 gulp.task('move-php', function(done) {
-  return gulp.src('./src/php/*.php')
-  .pipe(gulp.dest('dist/php/'))
+  return gulp.src('./src/*.php')
+  .pipe(gulp.dest('dist/'))
   done();
 });
 

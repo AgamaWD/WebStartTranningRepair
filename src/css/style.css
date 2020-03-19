@@ -317,7 +317,9 @@ img {
 }
 
 .success {
-  color: #c0392b;
+  color: #16681e;
+  text-align: center;
+  width: 100%;
 }
 
 .animated {

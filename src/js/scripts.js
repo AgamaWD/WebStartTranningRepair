@@ -66,26 +66,26 @@ $(document).ready(function() {
     });
 
     /*обработка и отправка формы через Ajax*/
-    $('#offer-form').on('sabmit', function(event) {
+    $('#offer-form').on('submit', function(event) {
         event.preventDefault();
         $.ajax({
-            url: 'php/forms.php',
+            url: 'forms.php',
             type: 'POST',
             data: $(this).serialize(),
             success: function(data) {
-                $('.offer-success').html('Спасибо,' + data + '!' + '<br>' + 'Менеджер уже набирает Ваш номер!')
+                $('.offer__success').html('Спасибо за обращение,' + data + '!' + '<br>' + 'Менеджер уже набирает Ваш номер!')
             },
         });
     });
 
-    $('#brif-form').on('sabmit', function(event) {
+    $('#brif-form').on('submit', function(event) {
         event.preventDefault();
         $.ajax({
-            url: 'php/forms.php',
+            url: 'forms.php',
             type: 'POST',
             data: $(this).serialize(),
             success: function(data) {
-                $('.brif-success').html('Спасибо,' + data + '!' + '<br>' + 'Менеджер уже набирает Ваш номер!')
+                $('.brif__success').html('Спасибо за обращение,' + data + '!' + '<br>' + 'Менеджер уже набирает Ваш номер!')
             },
         });
     });

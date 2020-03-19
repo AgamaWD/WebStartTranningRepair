@@ -316,6 +316,10 @@ img {
   position: absolute;
 }
 
+.success {
+  color: #c0392b;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;

@@ -16,6 +16,12 @@ gulp.task('move-js', function(done) {
   done();
 });
 
+gulp.task('move-php', function(done) {
+  return gulp.src('./src/php/*.php')
+  .pipe(gulp.dest('dist/php/'))
+  done();
+});
+
 gulp.task('minify-html', function(done) {
   gulp.src('./src/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
@@ -37,7 +43,10 @@ gulp.task('tinypng', function(done) {
       .pipe(gulp.dest('dist/img/'));
   done();
 });
+gulp.task('move-code', gulp.parallel('minify-css', 'move-js', 'move-php', 'minify-html'), function(done) {
+  done();
+});
 
-gulp.task('default', gulp.parallel('minify-css', 'move-js', 'minify-html', 'fonts', 'tinypng'), function(done) {
+gulp.task('default', gulp.parallel('minify-css', 'move-js', 'move-php', 'minify-html', 'fonts', 'tinypng'), function(done) {
   done();
 });
